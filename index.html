@@ -10,55 +10,34 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-image: url(https://u.cubeupload.com/no_skips/futurepast.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    text-align: center;
+    font-family: Impact;
+    font-size: 75px;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1157.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1157.png), auto !important;
   }
 </style>
 </head>
 <body>
 
-<!-- Content remains unchanged -->
+<div class="no_skips_online">
+  <h1 style="-webkit-text-stroke: 1px black; color: white; animation: online 2s infinite; position: absolute; margin-left: 23%; margin-top: 1%;">TODOR ONLINE</h1>
+</div>
 
 <div class="oldgods">
+  <a href="https://instagram.com/windows_media_player" target="_blank">
+    <img src="https://u.cubeupload.com/no_skips/cherub1.png" style="position: absolute; margin-left: -820px; margin-top: -300px; height: 600px; filter:invert(100%) drop-shadow(-2px 2px 10px blue); transform: rotate(-20deg);">
+  </a>
+  <a href="https://todorwhat.bandcamp.com" target="_blank">
+    <img src="https://u.cubeupload.com/no_skips/cherub2.png" style="position: absolute; margin-left: 470px; margin-top: -150px; filter: invert(100%) drop-shadow(-2px 2px 10px blue);">
+  </a>
+</div>
 
-<a href="https://instagram.com/windows_media_player" target="_blank">
-  <img src="https://u.cubeupload.com/no_skips/cherub1.png" style="position: absolute;
-                                                              margin-left: -820px;
-                                                              margin-top: -300px;
-                                                              height: 600px;
-                                                              filter:invert(100%) drop-shadow(-2px 2px 10px blue);
-                                                              transform: rotate(-20deg);">
-</a>
-
-<a href="https://todorwhat.bandcamp.com" target="_blank">
-  <img src="https://u.cubeupload.com/no_skips/cherub2.png" style="position: absolute; margin-left: 470px; margin-top: -150px; filter: invert(100%) drop-shadow(-2px 2px 10px blue); ">
-</a>
-  <!-- Laptop box -->
-  <style>
-    .oldgods {
-      margin-left: 37%;
-      margin-top: 50px;
-      height: 300px;
-      width: 500px;
-      background-image: url(img/ibook.jpg);
-      background-size: 500px 300px;
-      background-position: center;
-      border-style: outset;
-      border-color: white;
-    }
-
-    .oldgods:hover {
-      transition: transform 0.2s ease-in-out;
-      transform: scale(1.05);
-    }
-  </style>
-
-  <h2 style="margin-right: 210px; margin-top: 90px; transform: rotate(-40deg);">TODOR ONLINE</h2>
-
-  <div style="margin-top: -140px; font-size: 30px; color: limegreen; text-align:right; margin-right: 35px">
-    <a target="_blank" href="www.instagram.com/no_skips"><font style="color: limegreen"></a></font><br><br>
-  </div>
+<div class="fun" style="height:76px; width: 1290px; position: absolute; top: 20%; left: 16%; background-color: black; font-size: 50px; text-indent: 280px;">
+  <font style="font-family: Cambria; color: yellow;">anyone can have a great time on my website :)</font>
 </div>
 
 <!-- Webamp Player -->
@@ -76,26 +55,12 @@
     webamp.renderWhenReady(document.getElementById("app"));
 </script>
 
-<script>
-  function setup_posters(row) {
-    var posterAngle = 360 / 12;
-    for (var i = 0; i < 12; i++) {
-      var poster = document.createElement('div');
-      poster.className = 'poster';
-      var transform = 'rotateY(' + (posterAngle * i) + 'deg) translateZ(200px)';
-      poster.style.webkitTransform = transform;
-      row.appendChild(poster);
+<style>
+  @keyframes online {
+    80% {
+      text-shadow: 10px 20px 30px black;
     }
   }
-
-  function init() {
-    setup_posters(document.getElementById('ring-1'));
-    setup_posters(document.getElementById('ring-2'));
-    setup_posters(document.getElementById('ring-3'));
-  }
-
-  window.addEventListener('load', init, false);
-</script>
-
+</style>
 </body>
 </html>
