@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <title>Todor</title>
+  <link rel="icon" href="https://u.cubeupload.com/no_skips/KazaaIcon2004.png"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+</style>
+</head>
+<body>
+
+<!-- Content remains unchanged -->
+
+<div class="oldgods">
+
+<a href="https://instagram.com/windows_media_player" target="_blank">
+  <img src="https://u.cubeupload.com/no_skips/cherub1.png" style="position: absolute;
+                                                              margin-left: -820px;
+                                                              margin-top: -300px;
+                                                              height: 600px;
+                                                              filter:invert(100%) drop-shadow(-2px 2px 10px blue);
+                                                              transform: rotate(-20deg);">
+</a>
+
+<a href="https://todorwhat.bandcamp.com" target="_blank">
+  <img src="https://u.cubeupload.com/no_skips/cherub2.png" style="position: absolute; margin-left: 470px; margin-top: -150px; filter: invert(100%) drop-shadow(-2px 2px 10px blue); ">
+</a>
+  <!-- Laptop box -->
+  <style>
+    .oldgods {
+      margin-left: 37%;
+      margin-top: 50px;
+      height: 300px;
+      width: 500px;
+      background-image: url(img/ibook.jpg);
+      background-size: 500px 300px;
+      background-position: center;
+      border-style: outset;
+      border-color: white;
+    }
+
+    .oldgods:hover {
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.05);
+    }
+  </style>
+
+  <h2 style="margin-right: 210px; margin-top: 90px; transform: rotate(-40deg);">TODOR ONLINE</h2>
+
+  <div style="margin-top: -140px; font-size: 30px; color: limegreen; text-align:right; margin-right: 35px">
+    <a target="_blank" href="www.instagram.com/no_skips"><font style="color: limegreen"></a></font><br><br>
+  </div>
+</div>
+
+<!-- Webamp Player -->
+<div id="app"></div>
+<script src="https://unpkg.com/webamp"></script>
+<script>
+    const webamp = new Webamp({
+        initialTracks: [
+            {
+                metaData: { title: "c0c00n_32bit" },
+                url: "https://1drv.ms/u/s!Aioxmw8phXTVhcMSPqM1kXGS_SrIGg?e=Q8nR8a"
+            }
+        ]
+    });
+    webamp.renderWhenReady(document.getElementById("app"));
+</script>
+
+<script>
+  function setup_posters(row) {
+    var posterAngle = 360 / 12;
+    for (var i = 0; i < 12; i++) {
+      var poster = document.createElement('div');
+      poster.className = 'poster';
+      var transform = 'rotateY(' + (posterAngle * i) + 'deg) translateZ(200px)';
+      poster.style.webkitTransform = transform;
+      row.appendChild(poster);
+    }
+  }
+
+  function init() {
+    setup_posters(document.getElementById('ring-1'));
+    setup_posters(document.getElementById('ring-2'));
+    setup_posters(document.getElementById('ring-3'));
+  }
+
+  window.addEventListener('load', init, false);
+</script>
+
+</body>
+</html>
